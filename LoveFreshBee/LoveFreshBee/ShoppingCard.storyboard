@@ -5,35 +5,6 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--Root View Controller-->
-        <scene sceneID="KoU-xM-mfY">
-            <objects>
-                <tableViewController id="yJV-dR-qSw" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="jrr-2J-KeM">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="d6R-EN-Wxh">
-                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="d6R-EN-Wxh" id="wC6-kc-leo">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="yJV-dR-qSw" id="MYa-fj-Ke4"/>
-                            <outlet property="delegate" destination="yJV-dR-qSw" id="Mtw-QZ-3WH"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="Ew4-Gj-uZL"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="DY5-Fb-HYe" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="556" y="205"/>
-        </scene>
         <!--Navigation Controller-->
         <scene sceneID="opj-S4-gPr">
             <objects>
@@ -43,12 +14,31 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="yJV-dR-qSw" kind="relationship" relationship="rootViewController" id="Stg-Yf-Yyq"/>
+                        <segue destination="p5n-XS-Reh" kind="relationship" relationship="rootViewController" id="pIi-JM-X3c"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tQd-Vf-vgE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-264" y="205"/>
+        </scene>
+        <!--Shop Cart View Controller-->
+        <scene sceneID="kDR-Tw-xXK">
+            <objects>
+                <viewController id="p5n-XS-Reh" customClass="XPShopCartViewController" customModule="LoveFreshBee" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Vjj-10-3DA"/>
+                        <viewControllerLayoutGuide type="bottom" id="KK0-xJ-q8u"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dyj-L6-RbF">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="nAX-OD-Fsi"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NDm-PQ-vK5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="485" y="105"/>
         </scene>
     </scenes>
 </document>

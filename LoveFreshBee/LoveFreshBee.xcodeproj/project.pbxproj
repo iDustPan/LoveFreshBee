@@ -15,6 +15,10 @@
 		795D13581D1533220016695C /* ShoppingCard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 795D13571D1533220016695C /* ShoppingCard.storyboard */; };
 		795D135A1D15333F0016695C /* Mine.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 795D13591D15333F0016695C /* Mine.storyboard */; };
 		795D135C1D1533800016695C /* XPMainTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795D135B1D1533800016695C /* XPMainTabController.swift */; };
+		795D135E1D153B2E0016695C /* XPHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795D135D1D153B2E0016695C /* XPHomeViewController.swift */; };
+		795D13601D153B430016695C /* XPFlashMarketController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795D135F1D153B430016695C /* XPFlashMarketController.swift */; };
+		795D13621D153B560016695C /* XPShopCartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795D13611D153B560016695C /* XPShopCartViewController.swift */; };
+		795D13641D153B680016695C /* XPMineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795D13631D153B680016695C /* XPMineViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +32,10 @@
 		795D13571D1533220016695C /* ShoppingCard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ShoppingCard.storyboard; sourceTree = "<group>"; };
 		795D13591D15333F0016695C /* Mine.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Mine.storyboard; sourceTree = "<group>"; };
 		795D135B1D1533800016695C /* XPMainTabController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XPMainTabController.swift; sourceTree = "<group>"; };
+		795D135D1D153B2E0016695C /* XPHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XPHomeViewController.swift; sourceTree = "<group>"; };
+		795D135F1D153B430016695C /* XPFlashMarketController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XPFlashMarketController.swift; sourceTree = "<group>"; };
+		795D13611D153B560016695C /* XPShopCartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XPShopCartViewController.swift; sourceTree = "<group>"; };
+		795D13631D153B680016695C /* XPMineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XPMineViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +109,10 @@
 			isa = PBXGroup;
 			children = (
 				795D135B1D1533800016695C /* XPMainTabController.swift */,
+				795D135D1D153B2E0016695C /* XPHomeViewController.swift */,
+				795D135F1D153B430016695C /* XPFlashMarketController.swift */,
+				795D13611D153B560016695C /* XPShopCartViewController.swift */,
+				795D13631D153B680016695C /* XPMineViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -180,8 +192,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				795D13621D153B560016695C /* XPShopCartViewController.swift in Sources */,
 				795D135C1D1533800016695C /* XPMainTabController.swift in Sources */,
+				795D135E1D153B2E0016695C /* XPHomeViewController.swift in Sources */,
+				795D13601D153B430016695C /* XPFlashMarketController.swift in Sources */,
 				795D133E1D152F020016695C /* AppDelegate.swift in Sources */,
+				795D13641D153B680016695C /* XPMineViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -5,39 +5,6 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--Root View Controller-->
-        <scene sceneID="ws6-h6-YiG">
-            <objects>
-                <tableViewController id="WQO-7U-vcq" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="fqc-TR-9IH">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="wGf-in-rWc">
-                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="wGf-in-rWc" id="yIl-et-GMW">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="WQO-7U-vcq" id="pU8-Nn-o1V"/>
-                            <outlet property="delegate" destination="WQO-7U-vcq" id="PaP-25-wkI"/>
-                        </connections>
-                    </tableView>
-                    <toolbarItems>
-                        <barButtonItem title="Item" id="Qfv-ER-x9S"/>
-                    </toolbarItems>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="03R-ey-XSw"/>
-                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="zcf-vA-TCV" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1483" y="375"/>
-        </scene>
         <!--Navigation Controller-->
         <scene sceneID="dI4-uy-Ypo">
             <objects>
@@ -48,11 +15,39 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="WQO-7U-vcq" kind="relationship" relationship="rootViewController" id="yUY-nZ-8WJ"/>
+                        <segue destination="iaC-Ss-E5J" kind="relationship" relationship="rootViewController" id="aDD-lj-QIb"/>
                     </connections>
                 </navigationController>
             </objects>
             <point key="canvasLocation" x="667" y="375"/>
         </scene>
+        <!--Home View Controller-->
+        <scene sceneID="h4y-ou-4AJ">
+            <objects>
+                <viewController id="iaC-Ss-E5J" customClass="XPHomeViewController" customModule="LoveFreshBee" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="p49-UC-aMZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="iLN-kY-7dk"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="jNN-YO-L0J">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="POE-QU-I84">
+                        <barButtonItem key="leftBarButtonItem" image="scanicon" id="dPp-gL-xAa"/>
+                        <barButtonItem key="rightBarButtonItem" image="icon_search" id="1g1-50-t4W">
+                            <color key="tintColor" red="1" green="0.71764705880000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6AN-vB-gWj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1342" y="375"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="icon_search" width="23" height="23"/>
+        <image name="scanicon" width="20" height="20"/>
+    </resources>
 </document>

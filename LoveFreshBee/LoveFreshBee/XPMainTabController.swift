@@ -27,6 +27,7 @@ class XPMainTabController: UITabBarController {
     }
     
     private func addChildViewController(storyboardName: String, title: String, image: String) {
+        
         let storyBoard = UIStoryboard(name: storyboardName, bundle: NSBundle.mainBundle())
         let viewController = storyBoard.instantiateInitialViewController()!
         
