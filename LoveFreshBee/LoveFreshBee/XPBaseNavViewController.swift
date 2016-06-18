@@ -1,5 +1,5 @@
 //
-//  XPMineViewController.swift
+//  XPBaseNavViewController.swift
 //  LoveFreshBee
 //
 //  Created by 徐攀 on 16/6/18.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class XPMineViewController: UIViewController {
+class XPBaseNavViewController: UINavigationController , UITabBarControllerDelegate{
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,5 +21,6 @@ class XPMineViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+
 
 }

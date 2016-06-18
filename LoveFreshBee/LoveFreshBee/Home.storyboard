@@ -5,11 +5,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--Navigation Controller-->
+        <!--Base Nav View Controller-->
         <scene sceneID="dI4-uy-Ypo">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="vm0-op-8id" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <navigationController id="FpZ-b6-Fh4" sceneMemberID="viewController">
+                <navigationController id="FpZ-b6-Fh4" customClass="XPBaseNavViewController" customModule="LoveFreshBee" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="AeX-dY-Ipv">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -18,6 +17,7 @@
                         <segue destination="iaC-Ss-E5J" kind="relationship" relationship="rootViewController" id="aDD-lj-QIb"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vm0-op-8id" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="667" y="375"/>
         </scene>

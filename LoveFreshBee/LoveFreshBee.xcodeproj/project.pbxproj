@@ -19,6 +19,8 @@
 		795D13601D153B430016695C /* XPFlashMarketController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795D135F1D153B430016695C /* XPFlashMarketController.swift */; };
 		795D13621D153B560016695C /* XPShopCartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795D13611D153B560016695C /* XPShopCartViewController.swift */; };
 		795D13641D153B680016695C /* XPMineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795D13631D153B680016695C /* XPMineViewController.swift */; };
+		795D13661D1541D70016695C /* XPBaseNavViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795D13651D1541D70016695C /* XPBaseNavViewController.swift */; };
+		795D136B1D155F4A0016695C /* XPAnimationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795D136A1D155F4A0016695C /* XPAnimationManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,8 @@
 		795D135F1D153B430016695C /* XPFlashMarketController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XPFlashMarketController.swift; sourceTree = "<group>"; };
 		795D13611D153B560016695C /* XPShopCartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XPShopCartViewController.swift; sourceTree = "<group>"; };
 		795D13631D153B680016695C /* XPMineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XPMineViewController.swift; sourceTree = "<group>"; };
+		795D13651D1541D70016695C /* XPBaseNavViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XPBaseNavViewController.swift; sourceTree = "<group>"; };
+		795D136A1D155F4A0016695C /* XPAnimationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XPAnimationManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +83,7 @@
 		795D134F1D152FC80016695C /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				795D13691D155F2F0016695C /* Tools */,
 				795D13521D1530040016695C /* Controller */,
 				795D13511D152FFE0016695C /* View */,
 				795D13501D152FE30016695C /* Model */,
@@ -108,13 +113,46 @@
 		795D13521D1530040016695C /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				795D135B1D1533800016695C /* XPMainTabController.swift */,
-				795D135D1D153B2E0016695C /* XPHomeViewController.swift */,
+				795D13681D154B740016695C /* Commen */,
+				795D13671D154B630016695C /* Home */,
 				795D135F1D153B430016695C /* XPFlashMarketController.swift */,
 				795D13611D153B560016695C /* XPShopCartViewController.swift */,
 				795D13631D153B680016695C /* XPMineViewController.swift */,
 			);
 			name = Controller;
+			sourceTree = "<group>";
+		};
+		795D13671D154B630016695C /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				795D135D1D153B2E0016695C /* XPHomeViewController.swift */,
+			);
+			name = Home;
+			sourceTree = "<group>";
+		};
+		795D13681D154B740016695C /* Commen */ = {
+			isa = PBXGroup;
+			children = (
+				795D135B1D1533800016695C /* XPMainTabController.swift */,
+				795D13651D1541D70016695C /* XPBaseNavViewController.swift */,
+			);
+			name = Commen;
+			sourceTree = "<group>";
+		};
+		795D13691D155F2F0016695C /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				795D136C1D1566600016695C /* Network */,
+				795D136A1D155F4A0016695C /* XPAnimationManager.swift */,
+			);
+			name = Tools;
+			sourceTree = "<group>";
+		};
+		795D136C1D1566600016695C /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -196,7 +234,9 @@
 				795D135C1D1533800016695C /* XPMainTabController.swift in Sources */,
 				795D135E1D153B2E0016695C /* XPHomeViewController.swift in Sources */,
 				795D13601D153B430016695C /* XPFlashMarketController.swift in Sources */,
+				795D13661D1541D70016695C /* XPBaseNavViewController.swift in Sources */,
 				795D133E1D152F020016695C /* AppDelegate.swift in Sources */,
+				795D136B1D155F4A0016695C /* XPAnimationManager.swift in Sources */,
 				795D13641D153B680016695C /* XPMineViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -345,6 +385,7 @@
 				795D134E1D152F020016695C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
