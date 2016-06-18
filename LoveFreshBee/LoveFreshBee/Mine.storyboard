@@ -5,10 +5,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--Root View Controller-->
+        <!--测试标题-->
         <scene sceneID="1xh-K6-g2D">
             <objects>
-                <tableViewController hidesBottomBarWhenPushed="YES" id="Pfh-jt-EMx" sceneMemberID="viewController">
+                <tableViewController id="Pfh-jt-EMx" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="rzg-ii-ez7">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -28,7 +28,7 @@
                             <outlet property="delegate" destination="Pfh-jt-EMx" id="jox-mE-d62"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="o8i-Ud-c9B"/>
+                    <navigationItem key="navigationItem" title="测试标题" id="o8i-Ud-c9B"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rMR-AE-BB9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -42,7 +42,7 @@
         <scene sceneID="dI4-uy-Ypo">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vm0-op-8id" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <navigationController hidesBottomBarWhenPushed="YES" id="FpZ-b6-Fh4" sceneMemberID="viewController">
+                <navigationController id="FpZ-b6-Fh4" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="AeX-dY-Ipv">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>

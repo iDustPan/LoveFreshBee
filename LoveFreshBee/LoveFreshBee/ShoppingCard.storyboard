@@ -8,7 +8,7 @@
         <!--Root View Controller-->
         <scene sceneID="KoU-xM-mfY">
             <objects>
-                <tableViewController hidesBottomBarWhenPushed="YES" id="yJV-dR-qSw" sceneMemberID="viewController">
+                <tableViewController id="yJV-dR-qSw" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="jrr-2J-KeM">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -37,7 +37,7 @@
         <!--Navigation Controller-->
         <scene sceneID="opj-S4-gPr">
             <objects>
-                <navigationController hidesBottomBarWhenPushed="YES" id="qYf-Cb-GDE" sceneMemberID="viewController">
+                <navigationController id="qYf-Cb-GDE" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="stX-k6-Qta">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
