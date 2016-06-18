@@ -8,20 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		795D133E1D152F020016695C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795D133D1D152F020016695C /* AppDelegate.swift */; };
-		795D13401D152F020016695C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795D133F1D152F020016695C /* ViewController.swift */; };
 		795D13431D152F020016695C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 795D13411D152F020016695C /* Main.storyboard */; };
 		795D13451D152F020016695C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 795D13441D152F020016695C /* Assets.xcassets */; };
-		795D13481D152F020016695C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 795D13461D152F020016695C /* LaunchScreen.storyboard */; };
+		795D13541D1532630016695C /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 795D13531D1532630016695C /* Home.storyboard */; };
+		795D13561D1532A50016695C /* FlashMarket.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 795D13551D1532A50016695C /* FlashMarket.storyboard */; };
+		795D13581D1533220016695C /* ShoppingCard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 795D13571D1533220016695C /* ShoppingCard.storyboard */; };
+		795D135A1D15333F0016695C /* Mine.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 795D13591D15333F0016695C /* Mine.storyboard */; };
+		795D135C1D1533800016695C /* XPMainTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795D135B1D1533800016695C /* XPMainTabController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		795D133A1D152F020016695C /* LoveFreshBee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoveFreshBee.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		795D133D1D152F020016695C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		795D133F1D152F020016695C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		795D13421D152F020016695C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		795D13441D152F020016695C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		795D13471D152F020016695C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		795D13491D152F020016695C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		795D13531D1532630016695C /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		795D13551D1532A50016695C /* FlashMarket.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = FlashMarket.storyboard; sourceTree = "<group>"; };
+		795D13571D1533220016695C /* ShoppingCard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ShoppingCard.storyboard; sourceTree = "<group>"; };
+		795D13591D15333F0016695C /* Mine.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Mine.storyboard; sourceTree = "<group>"; };
+		795D135B1D1533800016695C /* XPMainTabController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XPMainTabController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +60,49 @@
 		795D133C1D152F020016695C /* LoveFreshBee */ = {
 			isa = PBXGroup;
 			children = (
+				795D134F1D152FC80016695C /* Classes */,
 				795D133D1D152F020016695C /* AppDelegate.swift */,
-				795D133F1D152F020016695C /* ViewController.swift */,
-				795D13411D152F020016695C /* Main.storyboard */,
 				795D13441D152F020016695C /* Assets.xcassets */,
-				795D13461D152F020016695C /* LaunchScreen.storyboard */,
 				795D13491D152F020016695C /* Info.plist */,
 			);
 			path = LoveFreshBee;
+			sourceTree = "<group>";
+		};
+		795D134F1D152FC80016695C /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				795D13521D1530040016695C /* Controller */,
+				795D13511D152FFE0016695C /* View */,
+				795D13501D152FE30016695C /* Model */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		795D13501D152FE30016695C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		795D13511D152FFE0016695C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				795D13411D152F020016695C /* Main.storyboard */,
+				795D13531D1532630016695C /* Home.storyboard */,
+				795D13551D1532A50016695C /* FlashMarket.storyboard */,
+				795D13571D1533220016695C /* ShoppingCard.storyboard */,
+				795D13591D15333F0016695C /* Mine.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		795D13521D1530040016695C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				795D135B1D1533800016695C /* XPMainTabController.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,9 +164,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				795D13481D152F020016695C /* LaunchScreen.storyboard in Resources */,
+				795D13541D1532630016695C /* Home.storyboard in Resources */,
 				795D13451D152F020016695C /* Assets.xcassets in Resources */,
 				795D13431D152F020016695C /* Main.storyboard in Resources */,
+				795D135A1D15333F0016695C /* Mine.storyboard in Resources */,
+				795D13561D1532A50016695C /* FlashMarket.storyboard in Resources */,
+				795D13581D1533220016695C /* ShoppingCard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,7 +180,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				795D13401D152F020016695C /* ViewController.swift in Sources */,
+				795D135C1D1533800016695C /* XPMainTabController.swift in Sources */,
 				795D133E1D152F020016695C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -150,14 +194,6 @@
 				795D13421D152F020016695C /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		795D13461D152F020016695C /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				795D13471D152F020016695C /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -250,6 +286,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = LoveFreshBee/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -263,6 +300,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = LoveFreshBee/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
